@@ -31,4 +31,3 @@ copyButtons.forEach((copyButton) => {
     }, 1000);
   });
 });
-
