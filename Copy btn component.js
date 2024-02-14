@@ -13,8 +13,7 @@ copyButtons.forEach((copyButton) => {
     // define function to copy
     const copyJson = (event) => {
       event.preventDefault();
-      const componentJson = copyButton.parentElement.querySelector('[wb-data="json"]')
-        .textContent;
+      const componentJson = copyButton.previousElementSibling.textContent;
       event.clipboardData.setData("application/json", componentJson);
     };
 
