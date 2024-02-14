@@ -24,9 +24,13 @@ copyButtons.forEach((copyButton) => {
     // remove copy listener (to allow normal copy/paste again)
     document.removeEventListener("copy", copyJson);
 
-    // after 1 second, set button text back
-    setTimeout(() => {
-      buttonText.textContent = "Copied to Webstudio";
-    }, 1000);
+    // use requestAnimationFrame to force the text update
+    requestAnimationFrame(() => {
+      // after 1 second, set button text back
+      setTimeout(() => {
+        buttonText.textContent = "Copied to Webstudio";
+      }, 1000);
+    });
   });
 });
+
