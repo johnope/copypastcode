@@ -6,7 +6,7 @@ copyButton.addEventListener("click", (event) => {
   const buttonText = copyButton.querySelector('[wb-data="text"]');
 
   // change button text to inform user operation in progress
-  buttonText.textContent = "Copying...";
+  buttonText.textContent = "Copied...";
 
   // define function to copy
   const copyJson = (event) => {
@@ -25,6 +25,6 @@ copyButton.addEventListener("click", (event) => {
 
   // after 1 second, set button text back
   setTimeout(() => {
-    buttonText.textContent = "Copy to Webstudio";
+    buttonText.textContent = "Copied to Webstudio";
   }, 1000);
 });
