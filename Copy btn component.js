@@ -8,7 +8,7 @@ copyButtons.forEach((copyButton) => {
     const buttonText = copyButton.querySelector('[wb-data="text"]');
 
     // change button text to inform user operation in progress
-    buttonText.textContent = "Copying...";
+    buttonText.textContent = "Copied...";
 
     // define function to copy
     const copyJson = (event) => {
